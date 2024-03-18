@@ -370,10 +370,10 @@ ul.email li i {
 /** banner_main **/
 
 #top_section {
-    background-image: url('../images/banner.jpg');
+    background-image: url('../images/home1.png');
     background-size: cover;
     background-repeat: no-repeat;
-    padding-top: 120px;
+    padding-top: 130px;
     position: relative;
     height: 100vh;
     background-position: center;
@@ -386,7 +386,7 @@ ul.email li i {
 }
 
 #myCarousel .carousel-indicators .active {
-    background: #0e0b01;
+    background: #474747;
 }
 
 #myCarousel .carousel-indicators li {
@@ -540,7 +540,7 @@ ul.email li i {
 /** about **/
 
 .about {
-    background: url(../images/about_bg.jpg);
+    background: url(../images/aboutus.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

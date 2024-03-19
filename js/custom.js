@@ -136,3 +136,21 @@ function easeInOutQuad(t, b, c, d) {
 
 requestAnimationFrame(scrollAnimation);
 }
+
+//-------------------------------------------------------------cookies/
+function accettaCookie() {
+	// Qui puoi inserire il codice per impostare i cookie
+	// E.g., document.cookie = "accettato=true; expires=Thu, 18 Dec 2025 12:00:00 UTC; path=/";
+	// Assicurati di personalizzare questa parte in base alle tue esigenze
+	// Una volta impostati i cookie, puoi anche nascondere il banner
+	document.querySelector('.cookie-banner').style.display = 'none';
+  }
+  
+  function mostraDettagli() {
+	var details = document.querySelector('.cookie-details');
+	if (details.style.display === 'none') {
+	  details.style.display = 'block';
+	} else {
+	  details.style.display = 'none';
+	}
+  }

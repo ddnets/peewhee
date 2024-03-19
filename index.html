@@ -36,6 +36,19 @@
     <!-- end loader -->
     <!-- header -->
     <header>
+        <div class="cookie-banner">
+            <div class="cookie-text">
+              Il nostro sito web non utilizza cookie propri per raccogliere informazioni personali. Tuttavia, potremmo utilizzare servizi di terze parti come Google Maps o link di affiliazione Amazon, i quali potrebbero generare cookie per fornire funzionalità aggiuntive ai nostri servizi. Accettando i cookie, acconsenti all'uso di tali servizi di terze parti. Puoi gestire le tue preferenze sui cookie in qualsiasi momento nelle impostazioni del tuo browser.
+              <br>
+              <a href="#" class="cookie-link" onclick="mostraDettagli()">Scopri di più</a>
+            </div>
+            <div class="cookie-button-container">
+              <button class="cookie-button" onclick="accettaCookie()">Accetta e Continua</button>
+            </div>
+            <div class="cookie-details">
+              <p>I cookie di terze parti sono utilizzati per fornire funzionalità aggiuntive ai servizi del sito. Questi possono includere servizi di analisi, di pubblicità e di social media. Come proprietario del sito, non abbiamo controllo diretto su tali cookie poiché sono gestiti dalle rispettive terze parti. Tuttavia, ci impegniamo a garantire la trasparenza e a rispettare la tua privacy. Per ulteriori informazioni sui cookie e su come vengono utilizzati, ti invitiamo a consultare le <a href="https://programma-affiliazione.amazon.it/help/operating/policies#Associates%20Program%20Influencer%20Program%20Policy" style="color: #474747;" target="_blank">qui politiche sulla privacy</a> delle terze parti coinvolte.</p>
+            </div>
+          </div>
         <div class="header" id="navbar">
             <div class="container-fluid">
                 <div class="row d_flex">
@@ -211,7 +224,7 @@
                                                     <h3>Semplici <br>consigli</h3>
                                                     <p>Un semplice upgrade alla tua attrezzatura potrebbe dare una grande svolta alla qualità dei tuoi servizi e dei tuoi clienti, puntiamo a far crescere il tuo nome.
                                                     </p>
-                                                    <a class="read_more" href="#contact" onclick="scrollToSection('#contact')">Read More</a>
+                                                    <a class="read_more" href="#contact" onclick="scrollToSection('#contact')">Comincia</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -364,7 +377,7 @@
                     </div>
                 </div>
                 <div class="col-md-12">
-                    <a class="read_more" href="portfolio.html">See More</a>
+                    <a class="read_more" href="#portfolio" onclick="scrollToSection('#portfolio')">See More</a>
                 </div>
             </div>
         </div>
@@ -384,7 +397,7 @@
                         <i><img src="images/chose1.png" alt="#"/></i>
                         <h3>Progetti conclusi </h3>
                         <strong>1000+</strong>
-                        <a class="read_more" href="Javascript:void(0)">Read More</a>
+                        <a class="read_more" href="#we_do" onclick="scrollToSection('#we_do')">Servizi</a>
                     </div>
                 </div>
                 <div class="col-lg-5 col-md-4">
@@ -400,7 +413,7 @@
                         <i><img src="images/chose3.png" alt="#"/></i>
                         <h3>Traguardi</h3>
                         <strong>100+</strong>
-                        <a class="read_more" href="Javascript:void(0)">Leggi</a>
+                        <a class="read_more" href="#about" onclick="scrollToSection('#about')">Leggi</a>
                     </div>
                 </div>
             </div>

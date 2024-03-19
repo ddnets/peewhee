@@ -1092,3 +1092,62 @@ ul.social_icon li a:hover {
     transform: scale(0.9);
     /* Effetto di pressione */
 }
+
+/* FINE STILE CSS */
+
+/* COOKIES */
+
+.cookie-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    font-family: Arial, sans-serif; /* Cambio del font */
+    z-index: 999;
+  }
+  
+  .cookie-text {
+    display: inline-block; /* Permette al testo e ai bottoni di essere allineati orizzontalmente */
+    vertical-align: middle; /* Allinea il testo verticalmente al centro */
+    margin-right: 10px; /* Spazio tra il testo e i bottoni */
+    text-align: left; /* Allineamento del testo a sinistra */
+  }
+  
+  .cookie-button-container {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+  }
+  
+  .cookie-button {
+    background-color: #474747; /* Cambio colore del bottone */
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  
+  .cookie-button:hover {
+    background-color: #333; /* Cambio del colore al passaggio del mouse */
+  }
+  
+  .cookie-link {
+    color: #fff;
+    text-decoration: underline;
+  }
+  
+  .cookie-details {
+    display: none; /* Nascondo i dettagli inizialmente */
+    text-align: left; /* Allineamento del testo a sinistra */
+    margin-top: 15px;
+  }
+
+  /* FINE COOKIES */

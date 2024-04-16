@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <!-- basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- mobile metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <!-- site metas -->
+    <title>PeeWhee</title>
+    <link rel="icon" type="image/png" href="images/icoPEE.png">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- style css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- responsive-->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- awesome fontfamily -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<!-- body -->
+
+<body class="main-layout">
+    <!-- loader  -->
+    <div class="loader_bg">
+        <div class="loader"><img src="images/loading.gif" alt="" /></div>
+    </div>
+    <!-- end loader -->
+    <!-- header -->
+    <header>
+        <div class="cookie-banner">
+            <div class="cookie-text">
+                Il nostro sito web non utilizza cookie propri per raccogliere informazioni personali. Tuttavia, potremmo utilizzare servizi di terze parti come Google Maps o link di affiliazione Amazon, i quali potrebbero generare cookie per fornire funzionalità aggiuntive
+                ai nostri servizi. Accettando i cookie, acconsenti all'uso di tali servizi di terze parti. Puoi gestire le tue preferenze sui cookie in qualsiasi momento nelle impostazioni del tuo browser.
+                <br>
+                <a href="#" class="cookie-link" onclick="mostraDettagli()">Scopri di più</a>
+            </div>
+            <div class="cookie-button-container">
+                <button class="cookie-button" onclick="accettaCookie()">Accetta e Continua</button>
+            </div>
+            <div class="cookie-details">
+                <p>I cookie di terze parti sono utilizzati per fornire funzionalità aggiuntive ai servizi del sito. Questi possono includere servizi di analisi, di pubblicità e di social media. Come proprietario del sito, non abbiamo controllo diretto su
+                    tali cookie poiché sono gestiti dalle rispettive terze parti. Tuttavia, ci impegniamo a garantire la trasparenza e a rispettare la tua privacy. Per ulteriori informazioni sui cookie e su come vengono utilizzati, ti invitiamo a consultare
+                    le <a href="https://programma-affiliazione.amazon.it/help/operating/policies#Associates%20Program%20Influencer%20Program%20Policy" style="color: #474747;" target="_blank">qui politiche sulla privacy</a> delle terze parti coinvolte.</p>
+            </div>
+        </div>
+        <div class="header" id="navbar">
+            <div class="container-fluid">
+                <div class="row d_flex">
+                    <div class=" col-md-2 col-sm-3 col logo_section">
+                        <div class="full">
+                            <div class="center-desk">
+                                <div class="logo">
+                                    <a href="index.html"><img src="images/icoPEE.png" alt="#" /></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8 col-sm-9">
+                        <nav class="navigation navbar navbar-expand-md navbar-dark ">
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        </button>
+                            <div class="collapse navbar-collapse" id="navbarsExample04">
+                                <ul class="navbar-nav mr-auto">
+                                    <li class="nav-item active">
+                                        <a class="nav-link" href="index.html">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" onclick="scrollToSection('#about')">Vision</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" onclick="scrollToSection('#we_do')">Servizi</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" onclick="scrollToSection('#portfolio')">Portfolio </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" onclick="scrollToSection('#contact')">Contattaci</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="col-md-2 d_none">
+                        <ul class="email text_align_right">
+                            <li> <a title="NOT READY YET! ACCOUNTS STILL ON DEVELOPING" onclick="alert('PRESTO IN ARRIVO')"> Login </a></li>
+                            <li>
+                                <a title="NOT READY YET! RESEARCH STILL ON DEVELOPING" onclick="alert('PRESTO IN ARRIVO')"> <i class="fa fa-search" style="cursor: pointer;" aria-hidden="true"> </i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- end header -->
+    <!-- start slider section -->
+    <div id="top_section" class=" banner_main">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#myCarousel" data-slide-to="1"></li>
+                            <li data-target="#myCarousel" data-slide-to="2"></li>
+                            <li data-target="#myCarousel" data-slide-to="3"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="container-fluid">
+                                    <div class="carousel-caption relative">
+                                        <div class="bluid">
+                                            <h1>Solo <br>Creatività </h1>
+                                            <p>Abbiamo reso possibile il frutto di una semplice idea <br>Rendiamo le nostre idee possibili ogni giorno
+                                            </p>
+                                            <a class="read_more" href="#about" onclick="scrollToSection('#about')">Scoprici </a><a class="read_more" href="#we_do" onclick="scrollToSection('#we_do')">I nostri servizi </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="container-fluid">
+                                    <div class="carousel-caption relative">
+                                        <div class="bluid">
+                                            <h1>La nostra <br>Vision </h1>
+                                            <p>Cosa ci rende più vivi che mai <br>e cosa poniamo sempre al primo posto
+                                            </p>
+                                            <a class="read_more" href="#portfolio" onclick="scrollToSection('#portfolio')">Cosa offriamo </a><a class="read_more" href="#chose" onclick="scrollToSection('#chose')">Perchè noi? </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="container-fluid">
+                                    <div class="carousel-caption relative">
+                                        <div class="bluid">
+                                            <h1>Non solo <br>Tecnica </h1>
+                                            <p>Ci impegniamo ogni giorno a migliorare la qualità dei nostri servizi <br>e quella dei nostri collaboratori
+                                            </p>
+                                            <a class="read_more" href="#portfolio" onclick="scrollToSection('#portfolio')">I nostri partner </a><a class="read_more" href="#contact" onclick="scrollToSection('#contact')">Lavora con noi </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="container-fluid">
+                                    <div class="carousel-caption relative">
+                                        <div class="bluid">
+                                            <h1>Perché <br>lo facciamo? </h1>
+                                            <p>Le nostre piattaforme provengono da anni di esperienza nel settore <br>per dare la possibilità a chiunque di conoscere cosa lo circonda
+                                            </p>
+                                            <a class="read_more" href="#we_do" onclick="scrollToSection('#we_do')">Cosa facciamo </a><a class="read_more" href="#chose" onclick="scrollToSection('#chose')">Ci hanno già scelto</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                            <i class="fa fa-angle-left" aria-hidden="true"></i>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                            <i class="fa fa-angle-right" aria-hidden="true"></i>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end slider section -->
+    <!-- we_do -->
+    <div class="we_do" id="we_do">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="titlepage text_align_center">
+                        <h2>Che cosa facciamo </h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div id="we1" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#we1" data-slide-to="0" class="active"></li>
+                            <li data-target="#we1" data-slide-to="1"></li>
+                            <li data-target="#we1" data-slide-to="2"></li>
+                            <li data-target="#we1" data-slide-to="3"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="container-fluid">
+                                    <div class="carousel-caption we1_do">
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <div id="bo_ho" class="we_box text_align_left">
+                                                    <i><img src="images/we5.png" alt="#"/></i>
+                                                    <h3>Referral <br>products</h3>
+                                                    <p>Attraverso i link referral, i clienti possono esplorare e acquistare prodotti consigliati, garantendo affidabilità e supporto continuo al nostro lavoro.
+                                                    </p>
+                                                    <a class="read_more" href="#portfolio" onclick="scrollToSection('#portfolio')">Esplora</a>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div id="bo_ho" class="we_box text_align_left">
+                                                    <i><img src="images/we1.png" alt="#"/></i>
+                                                    <h3>Varietà <br>dei prodotti</h3>
+                                                    <p>Proprio grazie all'uso dei referral non ci chiudiamo nei nostri ideali. Ci piace spaziare tra più piattaforme per confrontare la scelta migliore sul mercato.
+                                                    </p>
+                                                    <a class="read_more" href="#portfolio" onclick="scrollToSection('#portfolio')">Scopri</a>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div id="bo_ho" class="we_box text_align_left">
+                                                    <i><img src="images/we4.png" alt="#"/></i>
+                                                    <h3>Semplici <br>consigli</h3>
+                                                    <p>Un semplice upgrade alla tua attrezzatura potrebbe dare una grande svolta alla qualità dei tuoi servizi e dei tuoi clienti, puntiamo a far crescere il tuo nome.
+                                                    </p>
+                                                    <a class="read_more" href="#contact" onclick="scrollToSection('#contact')">Comincia</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="container-fluid">
+                                    <div class="carousel-caption we1_do">
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <div id="bo_ho" class="we_box text_align_left">
+                                                    <i><img src="images/we6.png" alt="#"/></i>
+                                                    <h3>Progetti <br>di squadra</h3>
+                                                    <p>Offriamo servizi di consulenza specifica per ogni tipo software e progetto proposto. <br>Vogliamo capire le tue idee e trovare un modo per realizzarle.
+                                                    </p>
+                                                    <a class="read_more" href="#contact" onclick="scrollToSection('#contact')">Unisciti</a>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div id="bo_ho" class="we_box text_align_left">
+                                                    <i><img src="images/we2.png" alt="#"/></i>
+                                                    <h3>Supporto <br>costante 24/7</h3>
+                                                    <p>Siamo pronti ad aiutarvi in ogni momento con soluzioni immediate e affidabili. Con la massima comodità e tempestività. Sempre e ovunque.
+                                                    </p>
+                                                    <a class="read_more" href="#contact" onclick="scrollToSection('#contact')">Contattaci</a>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div id="bo_ho" class="we_box text_align_left">
+                                                    <i><img src="images/we3.png" alt="#"/></i>
+                                                    <h3>Software <br>Design</h3>
+                                                    <p>Le collaborazioni di design del software combinano arte e usabilità per creare soluzioni innovative, intuitive e uniche. <br>Il tuo stile rende unici i tuoi serivizi.
+                                                    </p>
+                                                    <a class="read_more" href="#contact" onclick="scrollToSection('#contact')">Cominciamo</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#we1" role="button" data-slide="prev">
+                            <i class="fa fa-angle-left" aria-hidden="true"></i>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#we1" role="button" data-slide="next">
+                            <i class="fa fa-angle-right" aria-hidden="true"></i>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end we_do -->
+    <!-- about -->
+    <div class="about" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="titlepage text_align_center" id="abouttext">
+                        <h2>Chi siamo</h2><br><br><br>
+                        <div class="scrollable-text">
+                            <p>Benvenuti nel mondo della consulenza tecnica all'avanguardia e della passione per l'eccellenza! Ci impegniamo a offrire un'esperienza unica nel mondo della consulenza tecnica su una vasta gamma di prodotti.<br><br> Siamo più
+                                di un semplice punto di contatto per le vostre esigenze tecniche: siamo il vostro alleato, il vostro consulente di fiducia che vi guiderà attraverso le complesse decisioni di acquisto, garantendo la massima soddisfazione
+                                e convenienza.<br><br> Una delle nostre principali aree di competenza è l'utilizzo dei link referral forniti da Amazon. Ma cosa sono e perché sono così importanti? I link referral non sono solo collegamenti ipertestuali,
+                                sono le porte d'accesso a un mondo di informazioni preziose e offerte vantaggiose. Attraverso questi link, forniamo ai nostri clienti l'opportunità di esplorare e acquistare i prodotti consigliati con la sicurezza e l'affidabilità
+                                di Amazon, il tutto mentre supportano il nostro lavoro e la nostra missione.<br><br> Tuttavia, la nostra missione va ben oltre il semplice atto di vendere. Siamo motivati dalla visione di una continua crescita e dedizione
+                                verso l'eccellenza. Ogni prodotto consigliato è il frutto di una ricerca attenta e di un impegno costante nel garantire la massima qualità e soddisfazione. La fiducia che i nostri clienti ripongono in noi è il motore che
+                                ci spinge a dare sempre il massimo, a superare le aspettative e a conquistare nuove vette di successo.<br><br> Unisciti a noi in questo viaggio verso l'eccellenza tecnica, dove la passione, l'innovazione e la dedizione
+                                si fondono per creare un'esperienza straordinaria, un prodotto alla volta. Grazie per averci scelto - la vostra soddisfazione è la nostra priorità assoluta.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end about -->
+    <!-- portfolio -->
+    <div class="portfolio" id="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="titlepage text_align_left">
+                        <h2>I nostri prodotti </h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div id="ho_nf" class="portfolio_main text_align_left">
+                        <figure>
+                            <img src="images/prot1.png" alt="#" />
+                            <div class="portfolio_text">
+                                <div class="li_icon">
+                                    <a href="https://www.amazon.it/s?k=I%2FO+LOITECH&__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=16PFSM99PEPVE&sprefix=i%2Fo+loitec%2Caps%2C159&linkCode=ll2&tag=peeweeh02-21&linkId=c51ffed42376df8f9b92bfbe9af45949&language=it_IT&ref_=as_li_ss_tl
+                                    " target="_blank"><i class="fa fa-search" aria-hidden="true"></i></a>
+
+                                    <a href="https://www.amazon.it/Logitech-G213-Prodigy-Gaming-Keyboard/dp/B07W6GVS5C?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1WOPK41PCBIP2&dib=eyJ2IjoiMSJ9.0yOY1ttfnik0fW8clqalebCvOiO1gwyH5G46xzvXAGnG_qnbMdFYcF4jGYf2SAiMhDYlRJS8pgQdxbLvdN5txTlPrjyLrvdw90coC6TaQGtaTdKs9srmfXrlmjVAlRSdTf-frPzb-_V_a6K2b5n77XSvQQ0SfT5opCzQWieAAJWjBDzYqSDUQix6RGmY6P0EUzETNSXzRjtAnxmxQFq7nV0TcAoem4wYHtADL1CRt75UBRoSPtOWyHlDuhlVr3Q89jiVkes1L2bRjCD15kjZWArJkF26hYW9qJF0o60wEQs.ZCZWvc0TNTCuKtp0rWUpot2WMeqnNifQeRMkFUgCsys&dib_tag=se&keywords=logitech+g213&qid=1711016546&sprefix=logitech+g+g213+%2Caps%2C204&sr=8-1&linkCode=ll1&tag=peeweeh02-21&linkId=e17101fc5c1f29a5fbf9b37686f9ae9c&language=it_IT&ref_=as_li_ss_tl
+                                    " target="_blank"><i class="fa fa-link" aria-hidden="true" title="TASTIERE"></i></a>
+
+                                    <a href="https://www.amazon.it/Brother-MFCL2750DW-Multifunzione-Monocromatica-Touchscreen/dp/B076PL6MVW?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2VU8Q2J34LZ3V&dib=eyJ2IjoiMSJ9.663QOkEmS1e1xFESyuMOkAphaKwDT1EoFNS0-Q2aXjjGjHj071QN20LucGBJIEps.idK5cef43Di3mWMF2iGcKRJpRbd8TsUohXL_UU_nZbc&dib_tag=se&keywords=Brother+MFCL5710DW&qid=1711016794&sprefix=brother+mfcl5710dw%2Caps%2C175&sr=8-3&linkCode=ll1&tag=peeweeh02-21&linkId=527cf2ac342849a9feaacc85ac3ad61b&language=it_IT&ref_=as_li_ss_tl
+                                    " target="_blank"><i class="fa fa-link" aria-hidden="true" title="PRINTER"></i></a>
+                                </div>
+                                <h3>Accessori&Hardware</h3>
+                                <p>Componenti e accessori selezionati apposta per creare il tuo setup ideale. Trova tutto ciò di cui hai bisogno per un'esperienza informatica senza pari.</p>
+                            </div>
+                        </figure>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div id="ho_nf" class="portfolio_main text_align_left">
+                        <figure>
+                            <img src="images/prot2.png" alt="#" />
+                            <div class="portfolio_text">
+                                <div class="li_icon">
+                                    <a href="https://www.amazon.it/s?k=marshall&__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=33O1INZRQEPOK&sprefix=marshall%2Caps%2C196&linkCode=ll2&tag=peeweeh02-21&linkId=4d2fbf041930a0ab0995b769626cd330&language=it_IT&ref_=as_li_ss_tl
+                                    " target="_blank"><i class="fa fa-search" aria-hidden="true"></i></a>
+
+                                    <a href="https://www.amazon.it/Marshall-Cuffia-Major-Bluetooth-Nero/dp/B08KHT2HDT?crid=AR4BU73NI4M9&dib=eyJ2IjoiMSJ9.WpHpRsskjulbbYKdVCyVb6dtGQTIAVW6pa-_ykLuuZSXZh5gcumKBh9ZJ2aSggRBP5kcCkgbqO8JpclRYX4w4iDpn02TX1QENHNO8t5yS0Dd_JznqAoQHIcyKbNMP5zs-szB3vcDV92ZC5sE9FSxGTi4KiJcMxr9lgQWQAATVVAghGuNFnWV4zBHdFqNbpcge2BEKBLhydRH2WJoJiaXCTDEjaYQsrSCuu8KftsdCN04lNbVBtV8fER0ZInupCESSxmu16BkKA0S74IS0nc0h4EQPLR2ZfHlfaLXVjr76UM.mzlCcrAoJeRrXDxQR08v9Jbv6AAL4EKObdfo2NS7z2g&dib_tag=se&keywords=marshall&qid=1711014513&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=MARSHALL%2Caps%2C130&sr=8-5&linkCode=ll1&tag=peeweeh02-21&linkId=afad96f02076ff166928df9cdbe01eee&language=it_IT&ref_=as_li_ss_tl
+                                    " target="_blank"><i class="fa fa-link" aria-hidden="true" title="CUFFIE"></i></a>
+
+                                    <a href="https://www.amazon.it/s?k=cuffie+bluetooth&crid=SEQR50BN762D&sprefix=cuffie+blu%2Caps%2C154&linkCode=ll2&tag=peeweeh02-21&linkId=7f429d0a15270baea4609315dee04965&language=it_IT&ref_=as_li_ss_tl
+                                    " target="_blank"><i class="fa fa-link" aria-hidden="true" title="PODS"></i></a>
+
+                                    <a href="https://www.amazon.it/Marshall-Uxbridge-Altoparlante-Bluetooth-Bianco/dp/B0866NG7VG?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=159O7RYQPOL3C&dib=eyJ2IjoiMSJ9.WpHpRsskjulbbYKdVCyVb6dtGQTIAVW6pa-_ykLuuZSXZh5gcumKBh9ZJ2aSggRBP5kcCkgbqO8JpclRYX4w4iDpn02TX1QENHNO8t5yS0Dd_JznqAoQHIcyKbNMP5zs-szB3vcDV92ZC5sE9FSxGTi4KiJcMxr9lgQWQAATVVAghGuNFnWV4zBHdFqNbpcge2BEKBLhydRH2WJoJiaXCTDEjaYQsrSCuu8KftsdCN04lNbVBtV8fER0ZInupCESSxmu16BkKA0S74IS0nc0h4EQPLR2ZfHlfaLXVjr76UM.mzlCcrAoJeRrXDxQR08v9Jbv6AAL4EKObdfo2NS7z2g&dib_tag=se&keywords=marshall&qid=1711015378&sprefix=marsha%2Caps%2C216&sr=8-32&linkCode=ll1&tag=peeweeh02-21&linkId=da20128e1c3914a8701d197206fdcd77&language=it_IT&ref_=as_li_ss_tl
+                                    " target="_blank"><i class="fa fa-link" aria-hidden="true" title="STEREO"></i></a>
+                                </div>
+                                <h3>Melodia e Strumenti</h3>
+                                <p>Scopri la nostra vasta gamma di strumenti musicali e accessori, perfetti per ogni musicista. Dalle chitarre elettriche alle cuffie professionali, trova tutto ciò di cui hai bisogno per creare e esibirti.</p>
+                            </div>
+                        </figure>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div id="ho_nf" class="portfolio_main text_align_left">
+                        <figure>
+                            <img src="images/prot3.png" alt="#" />
+                            <div class="portfolio_text">
+                                <div class="li_icon">
+                                    <a href="https://kinguin.net/?r=65f970251439c
+                                    " target="_blank"><i class="fa fa-search" aria-hidden="true"></i></a>
+
+                                    <a href="https://www.amazon.it/s?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&url=search-alias%3Dsoftware&field-keywords=&crid=2IZIYFW0H7H06&sprefix=%2Csoftware%2C160&linkCode=ll2&tag=peeweeh02-21&linkId=347cb761a38737509a6f36110570163a&language=it_IT&ref_=as_li_ss_tl
+                                    " target="_blank"><i class="fa fa-search" aria-hidden="true"></i></a>
+
+                                    <a href="https://www.amazon.it/gp/product/B09KV1X3DJ?pf_rd_m=A11IL2PNWYJU7H&pf_rd_s=merchandised-search-2&pf_rd_r=14AE8S36NMACC34HSDNS&pf_rd_t=101&pf_rd_p=af4466f3-f798-4730-9fd3-ea4480c437c0&pf_rd_i=412613031&th=1&linkCode=ll1&tag=peeweeh02-21&linkId=055eca4c61b1c50b8bfcc629023b18c9&language=it_IT&ref_=as_li_ss_tl
+                                    " target="_blank"><i class="fa fa-link" aria-hidden="true" title="NORD VPN"></i></a>
+                                </div>
+                                <h3>Software e Intrattenimento</h3>
+                                <p>Esplora la nostra selezione di software innovativi progettati per migliorare la tua produttività, arricchire il tuo tempo libero e trasformare le tue idee in realtà. </p>
+                            </div>
+                        </figure>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div id="ho_nf" class="portfolio_main text_align_left">
+                        <figure>
+                            <img src="images/prot4.png" alt="#" />
+                            <div class="portfolio_text">
+                                <div class="li_icon">
+                                    <a href="https://www.amazon.it/s?k=amd&__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2P4RYQW26HEZQ&sprefix=am%2Caps%2C124&linkCode=ll2&tag=peeweeh02-21&linkId=9fe06cc265b6fecb5023d5a8a4cc561f&language=it_IT&ref_=as_li_ss_tl
+                                    " target="_blank"><i class="fa fa-search" aria-hidden="true"></i></a>
+
+                                    <a href="https://www.amazon.it/Gigabyte-NVIDIA-GeForce-Scheda-grafica/dp/B0C8ZRMDC3?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=13DSW0DHFR1JN&dib=eyJ2IjoiMSJ9.PqVLHYK9DSvAtVeWlmObmtDO54odK-SuVNraheguXRw0qUfDoqKCq0vNMgfJzdYPvYYZF_N9gspG70D7HaavTV2D7fcppk03gQO7AX5RnCMMgIYf1ZqItUi7Vghpv3DovHS7JsXIJ4cBk6u6K7ZBX1VOT4SsW8Xpmntsi5KSNY99I1ScCaw6cgrVb_-bDgl35l-27RRvLEOajosyCn4invhhTW7-0yeR2BNlDBsvZBYsH4xH4StHXFenI6jdD8zVmG4U9xLUOnarAyigyKHH8YQqL6e6pOxvW8Ncod1-S6Q.Gmh9Pm1-zJ_LyVJEu177Z4g6M_DlQ9i3wzwtbEtwYOQ&dib_tag=se&keywords=nvidia&qid=1711015499&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=nvidea%2Caps%2C181&sr=8-5&linkCode=ll1&tag=peeweeh02-21&linkId=324c774e76b998f8415f7d5cca9471a1&language=it_IT&ref_=as_li_ss_tl
+                                    " target="_blank"><i class="fa fa-link" aria-hidden="true" title="GPU"></i></a>
+
+                                    <a href="https://www.amazon.it/AMD-Processore-7900X3D-Tecnologia-Architettura/dp/B0BTRRNK7T?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2PGBC2JY1JDJ6&dib=eyJ2IjoiMSJ9.RTv55yjo6TJmV3nlk9l7JXWtushsStX7-DiSvQNk8OeS7XqLDS_6quwptK0esokQ6NolH9lhtbCtDhhnx05hRQse2S1yEitg2q9Fv1oKXsg5jgQTJxCZNV7uWAwqMh4p0x24ZeNxy1XUMmjnL_EpAgsdPTetLacM8kBTR2QkYlV3g_hx6SCRW8Z9skKnWtt1OVklRIKb29X_Fjb1NVdJVm9lk5WGJ0IcLYKb5koZztIyCvrbW9OcgU8iqhF-gy_0aVNzztYqK-EpKcFLvrvBlfsL052RfN2Kp8_JGOTa_Ho.p4EfJ9HAmSmDXDkdwPf_A5hVrUhUWe2dgbbyTUI50NY&dib_tag=se&keywords=ryzen+9&qid=1711015565&sprefix=ryxezn+9%2Caps%2C152&sr=8-3&linkCode=ll1&tag=peeweeh02-21&linkId=5f66bbb724917633fb605bdef784e085&language=it_IT&ref_=as_li_ss_tl
+                                    " target="_blank"><i class="fa fa-link" aria-hidden="true" title="CPU"></i></a>
+                                </div>
+                                <h3>Frontiera Elettronica</h3>
+                                <p>Scopri la vasta gamma di componenti elettronici e accessori di alta qualità, progettati per stimolare la tua creatività e portare i tuoi progetti al livello successivo. Trova ciò di cui hai bisogno per realizzare le tue
+                                    idee.</p>
+                            </div>
+                        </figure>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <a class="read_more" href="#portfolio" onclick="scrollToSection('#portfolio')">See More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end portfolio -->
+    <!-- chose -->
+    <div class="chose" id="chose">
+        <div class="container">
+            <div class="row d_flex">
+                <div class="col-md-12">
+                    <div class="titlepage text_align_left">
+                        <h2>Perché scegliere noi</h2>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-4">
+                    <div class="chose_box">
+                        <i><img src="images/chose1.png" alt="#"/></i>
+                        <h3>Progetti conclusi </h3>
+                        <strong>1000+</strong>
+                        <a class="read_more" href="#we_do" onclick="scrollToSection('#we_do')">Servizi</a>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-4">
+                    <div class="chose_box">
+                        <i><img src="images/chose2.png" alt="#"/></i>
+                        <h3>Consulenze </h3>
+                        <strong>900+</strong>
+                        <a class="read_more" href="#contact" onclick="scrollToSection('#contact')">Cominciamo</a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <div class="chose_box">
+                        <i><img src="images/chose3.png" alt="#"/></i>
+                        <h3>Traguardi</h3>
+                        <strong>100+</strong>
+                        <a class="read_more" href="#about" onclick="scrollToSection('#about')">Leggi</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end chose -->
+    <!-- contact -->
+    <div class="contact" id="contact">
+        <div class="container">
+            <div class="row ">
+                <div class="col-md-6">
+                    <div class="titlepage text_align_left">
+                        <h2>Contattaci</h2>
+                    </div>
+                    <form id="request" class="main_form">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <input class="contactus" placeholder="Name*" type="type" name=" Name">
+                            </div>
+                            <div class="col-md-12">
+                                <input class="contactus" placeholder="Phone Number" type="type" name="Phone Number">
+                            </div>
+                            <div class="col-md-12">
+                                <input class="contactus" placeholder="Email*" type="type" name="Email">
+                            </div>
+                            <div class="col-md-12">
+                                <textarea class="textarea" placeholder="Message" type="type" Message="Name"></textarea>
+                            </div>
+                            <div class="col-md-12">
+                                <button class="send_btn">Invia ora</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-6">
+                    <div class="titlepage text_align_left">
+                        <h2>I Promulgatori</h2>
+                    </div>
+                    <div id="clientsl" class="carousel slide our_clientsl" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#clientsl" data-slide-to="0" class="active"></li>
+                            <li data-target="#clientsl" data-slide-to="1"></li>
+                            <li data-target="#clientsl" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="container">
+                                    <div class="carousel-caption posi_in">
+                                        <div class="clientsl_text">
+                                            <i><img src="images/promo1.png" alt="#"/></i>
+                                            <h3>PeeWhee <img src="images/icon.png" alt="#" /></h3>
+                                            <p>Dalla vendita online mi sono chiesto come migliorare le opportunità che offrivo ai miei clienti, far conoscere al pubblico la mia merce e poter collaborare con persone che condividono il mio stesso sogno. Mi
+                                                appassiona il pensiero di poter far parte di una comunità che si impegna ad aiutare le persone solo in ciò di cui hanno bisogno.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="container">
+                                    <div class="carousel-caption posi_in">
+                                        <div class="clientsl_text">
+                                            <i><img src="images/promo2.png" alt="#"/></i>
+                                            <h3>Lorenzo M.<img src="images/icon.png" alt="#" /></h3>
+                                            <p>L'idea di un approccio diretto a tu per tu col cliente è volto a perfezionare i risultati del servizio. Lo sviluppo e la tecnica sono messi in primo piano con l'intento di accrescere la necessità di migliorarsi
+                                                proprio perché la visione fondamentale di una comunità solida ed efficente punta a rendere protagonisti tutti coloro che ne vogliono fare parte.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#clientsl" role="button" data-slide="prev">
+                            <i class="fa fa-angle-left" aria-hidden="true"></i>
+                            <span class="sr-only">Precedente</span>
+                        </a>
+                        <a class="carousel-control-next" href="#clientsl" role="button" data-slide="next">
+                            <i class="fa fa-angle-right" aria-hidden="true"></i>
+                            <span class="sr-only">Successivo</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- contact -->
+    <button onclick="scrollToSection('#navbar')" id="scrollToTopBtn"><i></i></button>
+    <!-- footer -->
+    <footer>
+        <div class="footer" id="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <a class="logo_footer" href="index.html"><img src="images/logoPEE.png" alt="#" /></a>
+                    </div>
+                    <div class="col-md-9">
+                        <form class="newslatter_form">
+                            <input class="ente" placeholder="Enter your email" type="text" name="Enter your email">
+                            <button class="subs_btn">ISCRIVITI</button>
+                        </form>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="Informa helpful">
+                            <h3>LINK UTILI</h3>
+                            <ul>
+                                <li><a href="#index" onclick="scrollToSection('#index')">Home</a></li>
+                                <li><a href="#about" onclick="scrollToSection('#about')">About</a></li>
+                                <li><a href="#we_do" onclick="scrollToSection('#we_do')">What we do</a></li>
+                                <li><a href="#portfolio" onclick="scrollToSection('#portfolio')">Portfolio</a></li>
+                                <li><a href="#contact" onclick="scrollToSection('#contact')">Contact us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="Informa">
+                            <h3>NEWS</h3>
+                            <ul>
+                                <li>Ultime notizie
+                                </li>
+                                <li>Webinar
+                                </li>
+                                <li>Seguici sui social
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="Informa">
+                            <h3>COMPAGNIA</h3>
+                            <ul>
+                                <li>About us
+                                </li>
+                                <li>Social
+                                </li>
+                                <li>Lavora con noi
+                                </li>
+                                <li>Dove trovarci
+                                </li>
+                                <li>Promulgatori
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="Informa conta">
+                            <h3>CONTATTACI</h3>
+                            <ul>
+                                <li>
+                                    <a href="Javascript:void(0)"> <i class="fa fa-map-marker" aria-hidden="true"></i> Location
+                                    </a>
+                                </li>
+                                <li> <a href="Javascript:void(0)"><i class="fa fa-phone" aria-hidden="true"></i> Call +39 392 416 5348
+                              </a>
+                                </li>
+                                <li>
+                                    <a href="Javascript:void(0)"> <i class="fa fa-envelope" aria-hidden="true"></i> fagghingelicompter@gmail.com
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright text_align_left">
+                <div class="container">
+                    <div class="row d_flex">
+                        <div class="col-md-6">
+                            <p>© 2024 All Rights Reserved. <a href="https://github.com/ddnets/"> DD Nets Services</a></p>
+                        </div>
+                        <div class="col-md-6">
+                            <ul class="social_icon text_align_center">
+                                <li> <a href="Javascript:void(0)"><i class="fa fa-facebook-f"></i></a></li>
+                                <li> <a href="Javascript:void(0)"><i class="fa fa-twitter"></i></a></li>
+                                <li> <a href="Javascript:void(0)"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+                                <li> <a href="Javascript:void(0)"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                                <li> <a href="Javascript:void(0)"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end footer -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.0.0.min.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+
+</html>
